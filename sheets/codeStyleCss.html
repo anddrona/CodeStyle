@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Style CSS</title>
+    <link rel="stylesheet" href="../css/codeStyleHtml.css">
+    <link rel="stylesheet" href="../css/codeStyleCss.css">
+</head>
+
+<body>
+    <header class="header-part">
+        <img src="../image/headerCss.jpg" alt="">
+    </header>
+    <main>
+        <h1>
+            Code Style Css
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../sheets/codeStyleHtml.html">
+                        Code Style HTML
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Code Style CSS
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Code Style CSS
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p>Хороший код — это код который удобно читать и поддерживать.</p>
+        <section class="simple-code-part">
+            <p>Хороший код должен быть простым:</p>
+            <p>
+                &#8212; используйте легко читаемые селекторы и говорящие классы. По ним сразу можно понять к чему
+                применяются стили.
+            </p>
+            <p>
+                &#8212; классы пишите в нижнем регистре (строчными буквами).
+            </p>
+            <p>
+                &#8212; вместо пробела в классах используйте знак «дефис». Старайтесь не использовать нижнее
+                подчеркивание и
+                camelCase.
+            </p>
+            <p>
+                &#8212; код должен быть в одном стиле: везде используется один порядок свойств, одинаковые отступы и
+                пробелы, один стиль записи цветов и псевдоэлементов.
+            </p>
+            <section class="simple-example-code">
+                <figure>
+                    <figcaption>
+                        плохо
+                    </figcaption>
+                    <img src="../image/bad-example.png" alt="">
+                </figure>
+                <figure>
+                    <figcaption>
+                        хорошо
+                    </figcaption>
+                    <img src="../image/good-example.png" alt="">
+                </figure>
+            </section>
+        </section>
+        <section class="properties-part">
+            <p>Оформляем блок со свойствами:</p>
+            <p>
+                &#8212; после селектора, перед открывающей блок «фигурной скобкой» ставьте «пробел».
+            </p>
+            <p>
+                &#8212; в начале строки перед свойствами ставится «два пробела». Это самый популярный вариант.
+            </p>
+            <p>
+                &#8212; после двоеточия ставьте «пробел».
+            </p>
+            <p>
+                &#8212; обязательно ставить «точку с запятой» в конце свойства.
+            </p>
+            <p>
+                &#8212; ставьте закрывающую «фигурную скобку» на новой строке.
+            </p>
+            <figure>
+                <figcaption>
+                    Между набором правил оставляйте одну пустую строку:
+                </figcaption>
+                <img src="../image/styles.png" alt="">
+            </figure>
+        </section>
+        <section class="block-advice">
+            <p>
+                Все стили пишем через селектор класса. Теги используем только для глобальных стилей, <span>id</span> в
+                стилях не используем.
+            </p>
+            <p>Избегайте использование <span>!important.</span></p>
+            <p>Псевдокласс <span>nth-child</span> используем только со значениями <span>even</span> и <span>odd.</span>
+                В
+                остальных случая используем дополнительный класс.
+            </p>
+            <section>
+                <p>
+                    Сохраняйте уровень вложенности не более двух элементов, если не используем БЭМ.
+                </p>
+                <p>Плохо: <span>.block .faq .title</span></p>
+                <p>Хорошо: <span>.faq .title</span></p>
+            </section>
+            <p>При использовании БЭМ вложенность не используется.</p>
+            <p>Обязательно указывайте альтернативный вид и тип семейства шрифтов.</p>
+            <p>Проверяйте вёрстку на переполнение.</p>
+            <p>У интерактивных элементов обязательны стили состояний: <span>hover, focus, active, disabled. </span></p>
+            <p>
+                Если используете свойство <span>display: inline-block,</span> обязательно добавляйте свойство
+                <span>vertical-align.</span>
+            </p>
+            <p>Свойство <span>position</span> используем в крайнем случае. Исключение: если иначе сделать невозможно
+                или сложно.</p>
+            <p>У нулевых значений не нужно писать единицы измерения. Когда значение <span>0</span>, то не важно это px,
+                % или
+                попугайчики.
+            </p>
+            <p>Значения цвета hex пишем в нижнем регистре.</p>
+            <p class="validate-part">Проверяйте css в валидаторе — <a
+                    href="https://jigsaw.w3.org/css-validator/">https://jigsaw.w3.org/css-validator/</a></p>
+        </section>
+        <section class="additional-part">
+            <h2>Дополнительно</h2>
+            <p>
+                В названиях файлов и папок используйте только латиницу и буквы в нижнем регистре, без пробелов. Для
+                разделения слов используйте «дефис» или нижние подчёркивание.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
